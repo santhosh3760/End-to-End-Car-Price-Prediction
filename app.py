@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 # Load the trained model
-# model = pickle.load(open('/Users/santhoshreddy/Desktop/vscode/OnineProjects/End-to-End-Machine-Learning-Projects-master/CarPrice/RF_model.pkl', 'rb'))
+# model = pickle.load(open('RF_model.pkl', 'rb'))
 model = pickle.load(open('RF_model.pkl', 'rb'))
 
 
