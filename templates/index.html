@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+</head>
+<body>
+    <h1>Car Price Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="Present_Price">Present Price:</label><br>
+        <input type="text" id="Present_Price" name="Present_Price" required><br>
+        
+        <label for="Kms_Driven">Kms Driven:</label><br>
+        <input type="text" id="Kms_Driven" name="Kms_Driven" required><br>
+        
+        <label for="Owner">Owner (0 or 1):</label><br>
+        <input type="text" id="Owner" name="Owner" required><br>
+        
+        <label for="Year">Year:</label><br>
+        <input type="text" id="Year" name="Year" required><br>
+        
+        <label for="Fuel_Type_Diesel">Fuel Type Diesel (0 or 1):</label><br>
+        <input type="text" id="Fuel_Type_Diesel" name="Fuel_Type_Diesel" required><br>
+        
+        <label for="Fuel_Type_Petrol">Fuel Type Petrol (0 or 1):</label><br>
+        <input type="text" id="Fuel_Type_Petrol" name="Fuel_Type_Petrol" required><br>
+        
+        <label for="Seller_Type_Individual">Seller Type Individual (0 or 1):</label><br>
+        <input type="text" id="Seller_Type_Individual" name="Seller_Type_Individual" required><br>
+        
+        <label for="Transmission_Mannual">Transmission Manual (0 or 1):</label><br>
+        <input type="text" id="Transmission_Mannual" name="Transmission_Mannual" required><br><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+    <h2>{{ prediction_text }}</h2>
+</body>
+</html>

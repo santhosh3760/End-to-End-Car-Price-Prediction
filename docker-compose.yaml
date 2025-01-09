@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  car_price_prediction:  # Fixed typo in service name
+    build:               # Proper indentation for `build`
+      context: .
+    ports:
+      - "5001:5000"      # Correct port mapping
+    volumes:
+      - .:/CRP_App       # Mounts the current directory to /CRP_App inside the container
+    environment:         # Fixed typo (was `environments`)
+      - FLASK_ENV=development  # Removed spaces around `=`
+    container_name: car_price_prediction_app  # Fixed typo in container name
